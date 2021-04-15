@@ -110,7 +110,7 @@ li {
         display: grid;
         grid-template-columns: 125px 1fr;
         grid-template-rows: 5rem 1fr 5rem;
-        grid-template-areas: 's h h' 's m m' 's  f f';
+        grid-template-areas: 's h' 's m' 's f';
         grid-gap: 0px;
         width: 100vw;
         height: 100vh;
