@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script defer src= "app.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="   CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Lab Week 8</title>
 </head>
-<body>
+<body class="light">
     <div class="container">
-        <nav class="header">
+         <header>
             <ul>
-                <li class="headerl"><a href=#>About</a></li>
-                <li class="headerl"><a href=#>Docs</a></li>
+                <li class="headerl"><button id = "dark" class="material-icons-round">dark_mode</button></li>
+                <li class="headerl">About</li>
+                <li class="headerl">Docs</li>
             </ul>
-        </nav>
-        <nav class="side">
+        </header>
+        <div class="side">
             <a href="index.html"><button><div class="close">&laquo;</div></button></a>
             <ul>
                 <li>my notes: -</li>
@@ -24,13 +27,13 @@
                 <li>2.note two</li>
             </ul>
 
-        </nav>
-        <div class="main">
+        </div>
+        <main>
             <div class="open">&#xFF0B;</div>
             <textarea cols="75" rows="30"></textarea>
             <button>save</button>
             <button>delete</button>
-        </div>
+        </main>
         <footer>
                 Created by or copyright or social media icons
         </footer>
