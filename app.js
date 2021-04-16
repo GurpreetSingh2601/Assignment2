@@ -57,4 +57,19 @@ function cleanUp(){
     const div =document.querySelector('#note-area')
     div.remove()
 }
+const notearray=[{title : "note1", body:"this is bost"}]
     
+window.addEventListener('load', createNoteList(notearray))
+
+function noteListTemplate(title){
+    return html=`
+    <li>${title}</li>`
+
+}
+
+function createNoteList(arr){
+    const noteDiv=document.querySelector('#notes-list')
+    for (const note of arr){
+        noteDiv.insertAdjacentHTML('beforeend',noteListTemplate(note.title))
+    }
+}
