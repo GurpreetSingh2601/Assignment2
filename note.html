@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script defer src= "app.js"></script>
+    <script src="https://kit.fontawesome.com/240c8cd413.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
@@ -21,19 +22,17 @@
         </header>
         <div class="side">
             <a href="index.html"><button><div class="close">&laquo;</div></button></a>
-            <ul>
-                <li>my notes: -</li>
-                <li>1.note one</li>
-                <li>2.note two</li>
-            </ul>
+           <h1>My notes</h1>
 
         </div>
-        <main>
-            <div class="open">&#xFF0B;</div>
-            <textarea cols="75" rows="30"></textarea>
-            <button>save</button>
-            <button>delete</button>
-        </main>
+        <div class ="main">
+            <div>
+                <span onclick="createContentWritingArea()"><i class="fas fa-plus"></i></span>
+            </div>
+            <div id="content"></div>
+           <div id="view-note"></div>
+        </div>
+
         <footer>
                 Created by or copyright or social media icons
         </footer>
